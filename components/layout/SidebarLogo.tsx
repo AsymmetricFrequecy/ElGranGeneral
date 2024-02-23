@@ -9,8 +9,8 @@ const SidebarLogo = () => {
 			onClick={() => router.push('/')}
 			className="rounded-md mt-14 mb-4 flex items-center justify-center cursor-pointer transition">
 			<Image
-				src="/images/logo_v_dorado.png"
-				alt="Property Token Logo"
+				src="/images/ElGranGeneral.png"
+				alt="El Gran General"
 				className=" w-full object-contain"
 				width={300}
 				height={300}

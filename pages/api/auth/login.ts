@@ -25,7 +25,7 @@ export default async function loginHandler(
 		const token = sign(
 			{
 				exp: Math.floor(Date.now() / 1000) + 60 * 60 * 24 * 30, // 30 days
-				name: 'Robert Swiss',
+				name: 'El Gran General',
 				username: username,
 			},
 			secret
@@ -47,8 +47,8 @@ export default async function loginHandler(
 
 const validateUser = (username: String, password: String) => {
 	const user = {
-		rUsername: 'robert@propertytoken.io',
-		rPassword: 'propertytoken.io',
+		rUsername: '@elgrangeneral',
+		rPassword: 'inversioneselgrangeneral.com',
 	};
 	let status = 422; //user not found
 	let message = 'Invalid credentials';

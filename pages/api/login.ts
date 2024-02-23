@@ -1,15 +1,15 @@
-import { NextApiRequest, NextApiResponse } from "next";
+import { NextApiRequest, NextApiResponse } from 'next';
 
 export default function handler(req: NextApiRequest, res: NextApiResponse) {
-	if (req.method !== "POST") {
-		res.status(405).send({ message: "Only POST requests allowed" });
+	if (req.method !== 'POST') {
+		res.status(405).send({ message: 'Only POST requests allowed' });
 		return;
 	}
 	const { username, password } = JSON.parse(req.body);
 
 	const user = {
-		rUsername: "robert@propertytoken.io",
-		rPassword: "propertytoken.io",
+		rUsername: '@elgrangeneral',
+		rPassword: 'inversioneselgrangeneral.com',
 	};
 
 	if (username == user.rUsername && password == user.rPassword) {

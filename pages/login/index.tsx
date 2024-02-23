@@ -86,8 +86,8 @@ const Login: React.FC<LoginProps> = ({ contractAddress }) => {
 					const owner = await getOwner(contractAddress);
 					const method = 'post';
 					const body = JSON.stringify({
-						username: 'robert@propertytoken.io',
-						password: 'propertytoken.io',
+						username: '@elgrangeneral',
+						password: 'inversioneselgrangeneral.com',
 					});
 
 					await fetch('api/auth/login', { method, body });
@@ -116,11 +116,11 @@ const Login: React.FC<LoginProps> = ({ contractAddress }) => {
 						<nav className=" px-4 sm:px-12 ">
 							<Image
 								className="object-contain mx-auto md:ml-auto md:mr-0"
-								src="/images/logo_h_dorado.png"
+								src="/images/ElGranGeneral.png"
 								priority
-								alt="Property Token Logo"
-								width={400}
-								height={50}
+								alt="El Gran General Logo"
+								width={300}
+								height={300}
 							/>
 						</nav>
 
